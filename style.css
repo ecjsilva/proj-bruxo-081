@@ -14,6 +14,7 @@ body {
 }
 
 /*NAVBAR*/
+
 #nav {
   color: white;
   display: flex;
@@ -496,7 +497,7 @@ button a {
   }
 }
 
-.logo img {
+.logo {
   width: 7rem;
 }
 
@@ -510,7 +511,7 @@ span {
   #menu a {
     font-size: 0.8rem;
   }
-  .logo img {
+  .logo {
     width: 4rem;
   }
   #dragon {
@@ -553,12 +554,16 @@ span {
     margin: 0;
     padding: 0;
     justify-content: space-between;
+    z-index: 1001;
   }
   #menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 100%;
-    top: 60px;
+    top: 0;
     right: 0;
     background: #000000;
     z-index: 1000;
@@ -567,13 +572,17 @@ span {
     visibility: hidden;
     overflow-y: hidden;
   }
+  #menu a {
+    border-bottom: 2px solid #fff;
+  }
   #nav.active #menu {
-    height: calc(100vh - 58px);
+    height: 100vh;
     visibility: visible;
   }
   #menu li {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 1rem 0;
     margin: 1rem 1rem;
     border-bottom: #000000;
