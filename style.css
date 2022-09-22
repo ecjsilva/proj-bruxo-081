@@ -121,6 +121,10 @@ body {
   margin-top: 430px;
   filter: brightness(140%);
 }
+#bruxo:hover {
+  animation: vibrate-3 0.5s linear infinite both;
+  cursor: not-allowed;
+}
 
 @keyframes rotate {
   0% {
@@ -284,6 +288,49 @@ body {
 .img-sobre img {
   width: 450px;
 }
+/*EBOOK*/
+.ebook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-ebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-ebook p {
+  color: #fff;
+  width: 500px;
+  font-family: "Montserrat", sans-serif;
+}
+.ebook button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #32c332;
+}
+
+.ebook button a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 1rem;
+}
+.ebook-title {
+  font-size: 4rem;
+  font-family: "blank-river.ttf";
+  color: #b0e25c;
+}
+
+.ebook button:hover {
+  animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
 
 /*CONTATO*/
 .contato {
@@ -313,7 +360,7 @@ body {
 }
 
 .container-button {
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 .container-button button {
@@ -322,6 +369,12 @@ body {
   color: #fff;
   font-size: 1.5rem;
   border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .instagram {
@@ -350,10 +403,82 @@ body {
     #cc2366 75%,
     #bc1888 100%
   );
+  text-decoration: none;
 }
 
 .whatsapp {
   background-color: #32c332;
+  text-decoration: none;
+}
+
+#bruxoContato:hover {
+  animation: vibrate-3 0.5s linear infinite both;
+  cursor: not-allowed;
+}
+
+.instagram:hover {
+  animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+.whatsapp:hover {
+  animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+@keyframes vibrate-3 {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes shake-vertical {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+  80% {
+    transform: translateY(6.4px);
+  }
+  90% {
+    transform: translateY(-6.4px);
+  }
 }
 
 @keyframes tracking-in-contract-bck-top {
@@ -378,6 +503,7 @@ body {
 span {
   color: #b0e25c;
   font-family: "blank-river.ttf";
+  font-size: 2rem;
 }
 
 @media (max-width: 1440px) {
@@ -432,7 +558,7 @@ span {
     display: block;
     position: absolute;
     width: 100%;
-    top: 110px;
+    top: 60px;
     right: 0;
     background: #000000;
     z-index: 1000;
@@ -504,8 +630,19 @@ span {
     font-size: 0.8rem;
   }
 }
-
 @media (max-width: 428px) {
+  .img-fundo {
+    background-image: url(imgs/midiaquery/home-mobile.png);
+    background-size: cover;
+  }
+  .mercado {
+    background-image: url(imgs/midiaquery/mercado-mobile.png);
+    background-size: cover;
+  }
+  .feedback {
+    background-image: url(imgs/midiaquery/feedback-mobile.png);
+    background-size: cover;
+  }
   #dragon {
     width: 25rem;
     height: 25rem;
@@ -589,8 +726,44 @@ span {
   .container-title {
     margin: 0;
   }
+  .ebook {
+    height: 150vh;
+  }
+  .ebook button {
+    margin-top: 4rem;
+  }
+
+  .ebook-title {
+    margin-top: 7rem;
+    font-size: 3rem;
+  }
+  .container-ebook {
+    flex-direction: column-reverse;
+  }
+  .container-ebook img {
+    width: 300px;
+    margin: 2rem;
+  }
+  .container-ebook p {
+    width: 25rem;
+  }
 }
+
 @media (max-width: 414px) {
+  #dragon {
+    width: 25rem;
+    height: 25rem;
+    margin-top: 5rem;
+  }
+  #bruxo {
+    width: 17rem;
+    height: 17rem;
+    margin-top: 22rem;
+  }
+  .container h1 {
+    font-size: 4rem;
+    margin-top: 13rem;
+  }
   .container-card {
     height: 120vh;
   }
@@ -605,5 +778,116 @@ span {
   }
   .galery {
     width: 400px;
+  }
+}
+
+@media (max-width: 390px) {
+  .container-ebook p {
+    width: 23rem;
+  }
+  .ebook {
+    height: 170vh;
+  }
+  .text-sobre {
+    width: 370px;
+  }
+  .sobre {
+    height: 120vh;
+  }
+}
+
+@media (max-width: 375px) {
+  #dragon {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 5rem;
+  }
+  #bruxo {
+    width: 14rem;
+    height: 14rem;
+    margin-top: 19rem;
+  }
+  .container h1 {
+    font-size: 3rem;
+    margin-top: 11rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .container-card {
+    height: 130vh;
+  }
+  .galery {
+    height: 220px;
+  }
+  .text-sobre {
+    width: 340px;
+  }
+  .sobre {
+    height: 120vh;
+  }
+  .container-button button {
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .sobre {
+    height: 130vh;
+  }
+  .container-ebook p {
+    width: 20rem;
+  }
+  .ebook {
+    height: 180vh;
+  }
+}
+
+@media (max-width: 320px) {
+  #dragon {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 3rem;
+  }
+  .container h1 {
+    font-size: 3rem;
+    margin-top: 7rem;
+  }
+  #bruxo {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 13.8rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .card {
+    width: 8.3rem;
+  }
+  .title-card {
+    font-size: 0.65rem;
+  }
+  .description-card {
+    font-size: 0.7rem;
+  }
+  .mercado {
+    height: 200vh;
+  }
+  .galery {
+    width: 320px;
+    height: 178px;
+  }
+  .text-sobre {
+    width: 300px;
+  }
+  .sobre {
+    height: 170vh;
+  }
+  .container-button button {
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.3rem;
   }
 }
