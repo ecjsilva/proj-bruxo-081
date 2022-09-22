@@ -664,7 +664,7 @@ span {
   }
 
   .title-card {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
   .description-card {
@@ -688,11 +688,11 @@ span {
   }
   .galery {
     width: 460px;
-    height: 255px;
+    height: 220px;
     margin-top: 7rem;
   }
   .text-sobre {
-    width: 400px;
+    width: 360px;
     text-align: center;
     font-size: 0.8rem;
   }
@@ -711,7 +711,7 @@ span {
     margin-top: 4rem;
   }
   .container-button button {
-    width: 12rem;
+    width: 10rem;
     height: 4rem;
     font-size: 1.5rem;
   }
@@ -720,14 +720,12 @@ span {
     height: 14rem;
     margin-top: 7rem;
   }
-  .sobre {
-    height: 100vh;
-  }
+
   .container-title {
     margin: 0;
   }
   .ebook {
-    height: 150vh;
+    height: 160vh;
   }
   .ebook button {
     margin-top: 4rem;
@@ -745,7 +743,7 @@ span {
     margin: 2rem;
   }
   .container-ebook p {
-    width: 25rem;
+    width: 23rem;
   }
 }
 
@@ -765,7 +763,7 @@ span {
     margin-top: 13rem;
   }
   .container-card {
-    height: 120vh;
+    height: 140vh;
   }
   .card {
     width: 10.3rem;
@@ -789,7 +787,7 @@ span {
     height: 170vh;
   }
   .text-sobre {
-    width: 370px;
+    width: 340px;
   }
   .sobre {
     height: 120vh;
