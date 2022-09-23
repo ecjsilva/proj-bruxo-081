@@ -361,7 +361,8 @@ body {
 }
 
 .container-button {
-  margin-top: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .container-button button {
@@ -412,6 +413,11 @@ button a {
   text-decoration: none;
 }
 
+.telegram {
+  background-color: #259bd8;
+  text-decoration: none;
+}
+
 #bruxoContato:hover {
   animation: vibrate-3 0.5s linear infinite both;
   cursor: not-allowed;
@@ -421,6 +427,9 @@ button a {
   animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 .whatsapp:hover {
+  animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+.telegram:hover {
   animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 @keyframes vibrate-3 {
