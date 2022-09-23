@@ -618,6 +618,9 @@ span {
     height: 17rem;
     margin-top: 23rem;
   }
+  button {
+    border: none;
+  }
   .container h1 {
     font-size: 4rem;
     margin-top: 12rem;
@@ -793,7 +796,7 @@ span {
     width: 10.3rem;
   }
   .title-card {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .description-card {
     font-size: 0.8rem;
