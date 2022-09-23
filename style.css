@@ -513,7 +513,9 @@ button a {
 .logo {
   width: 7rem;
 }
-
+.container-logo {
+  display: none;
+}
 span {
   color: #b0e25c;
   font-family: "blank-river.ttf";
@@ -576,51 +578,16 @@ span {
   }
 }
 @media (max-width: 768px) {
-  #btn-mobile {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    z-index: 1001;
-  }
-  #menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    right: 0;
-    background: #000000;
-    z-index: 1000;
-    height: 0px;
-    transition: 0.6s;
-    visibility: hidden;
-    overflow-y: hidden;
-  }
-  #menu a {
-    border-bottom: 2px solid #fff;
-  }
-  #nav.active #menu {
-    height: 100vh;
-    visibility: visible;
-  }
-  #menu li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0;
-    margin: 1rem 1rem;
-    border-bottom: #000000;
-  }
-  #menu li a {
-    color: white;
-  }
-  #nav {
-    display: flex;
-    justify-content: space-around;
+  header {
+    display: none;
   }
 
+  .container-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #dragon {
     width: 25rem;
     height: 25rem;
@@ -680,7 +647,7 @@ span {
     font-size: 1.5rem;
   }
 }
-/*@media (max-width: 428px) {
+@media (max-width: 428px) {
   .img-fundo {
     background-image: url(imgs/midiaquery/home-mobile.png);
     background-size: cover;
@@ -693,21 +660,109 @@ span {
     background-image: url(imgs/midiaquery/feedback-mobile.png);
     background-size: cover;
   }
+
+  #inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+  }
+  .container-scroll {
+    display: flex;
+
+    width: 24px;
+    height: 24px;
+  }
+
+  .chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+
+  .chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+
+  .chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+
+  .chevron:before,
+  .chevron:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+  }
+
+  .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+
+  @keyframes move {
+    25% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+
+  .text {
+    display: block;
+    margin-top: 75px;
+    margin-left: -30px;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0.25;
+    animation: pulse 2s linear alternate infinite;
+  }
+
+  @keyframes pulse {
+    to {
+      opacity: 1;
+    }
+  }
   #dragon {
-    width: 25rem;
-    height: 25rem;
-    margin-top: 17rem;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 3rem;
   }
   #bruxo {
-    width: 17rem;
-    height: 17rem;
-    margin-top: 31rem;
+    width: 15rem;
+    height: 15rem;
+    margin-top: 17rem;
   }
   .container h1 {
     font-size: 4rem;
-    margin-top: 23rem;
+    margin-top: 7rem;
   }
-
   .container-card {
     gap: 0.5rem;
     width: 100vw;
@@ -763,7 +818,7 @@ span {
     flex-direction: column;
   }
   .container-button button {
-    width: 10rem;
+    width: 11rem;
     height: 4rem;
     font-size: 1.5rem;
   }
@@ -789,13 +844,17 @@ span {
   }
   .container-ebook {
     flex-direction: column-reverse;
+    justify-content: center;
   }
   .container-ebook img {
     width: 300px;
     margin: 2rem;
   }
   .container-ebook p {
-    width: 23rem;
+    width: 80%;
+  }
+  .container-button {
+    gap: 1rem;
   }
 }
 
@@ -893,6 +952,12 @@ span {
   .ebook {
     height: 250vh;
   }
+  .container-button button {
+    width: 11rem;
+    height: 3rem;
+
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 320px) {
@@ -935,116 +1000,13 @@ span {
   .sobre {
     height: 170vh;
   }
-  .container-button button {
-    width: 9rem;
-    height: 3rem;
-    font-size: 1.3rem;
-  }
-}
-*/
-
-@media screen and (max-width: 428px) {
-  .img-fundo {
-    display: flex;
-    justify-content: center;
-  }
-
-  #dragon {
-    width: 20rem;
-    height: 20rem;
-    margin-top: 9rem;
-  }
-  #bruxo {
-    width: 15rem;
-    height: 15rem;
-    margin-top: 23rem;
-  }
-  .container h1 {
-    margin-top: 15rem;
-  }
-  .img-fundo {
-    height: 94vh;
-  }
-  .container-card {
-    gap: 0.5rem;
-    width: 100%;
-  }
-  .card {
-    width: 27%;
-  }
-  .title-card {
-    font-size: 0.5rem;
-  }
-  .description-card {
-    align-items: center;
-    justify-content: center;
-    font-size: 0.5rem;
-    height: 9rem;
-  }
-  .description-card p {
-    width: 90%;
-  }
-  .galery {
-    width: 100%;
-    height: 179px;
-  }
-  .ebook {
-    margin-top: 17rem;
-  }
-  .ebook-title {
-    font-size: 3rem;
-  }
-  .container-ebook {
-    flex-direction: column-reverse;
-  }
-  .container-ebook p {
-    width: 80%;
-  }
-  .container-ebook img {
-    width: 80%;
-  }
-  .contato {
-    margin-top: 15rem;
-  }
   .container-button {
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
   }
-  .contato img {
-    width: 13rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .description-card {
-    align-items: center;
-    justify-content: center;
-    font-size: 0.5rem;
-    height: 12rem;
-  }
-}
-@media screen and (max-width: 320px) {
-  #dragon {
-    width: 15rem;
-    height: 15rem;
-    margin-top: 1rem;
-  }
-  #bruxo {
-    width: 10rem;
-    height: 10rem;
-    margin-top: 11rem;
-  }
-  .container h1 {
-    font-size: 3rem;
-    margin-top: 4rem;
-  }
-  .title-card {
-    font-size: 0.4rem;
-  }
-  .galery {
-    height: 179px;
-  }
-  .ebook {
-    margin-top: 28rem;
+  .container-button button {
+    width: 11rem;
+    height: 3rem;
+
+    font-size: 1.3rem;
   }
 }
