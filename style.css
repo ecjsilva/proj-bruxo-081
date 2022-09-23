@@ -415,7 +415,11 @@ button a {
 
 .telegram {
   background-color: #259bd8;
+
   text-decoration: none;
+}
+.telegram a {
+  font-size: 1.1rem;
 }
 
 #bruxoContato:hover {
@@ -513,7 +517,7 @@ button a {
 span {
   color: #b0e25c;
   font-family: "blank-river.ttf";
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 @media (max-width: 1440px) {
