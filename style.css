@@ -727,6 +727,8 @@ span {
   }
   .container-button {
     margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
   }
   .container-button button {
     width: 10rem;
