@@ -5,39 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bruxo081</title>
+
+    <!--Styles-->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="shortcut icon" href="imgs/favicon-16x16.png" type="image/x-icon">
-    <script src="scripts/contador.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="imgs/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <!--Scripts-->
+    <script src="js/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/34b44f9772.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
   <body>
+    <!--NAVBAR-->
+    <header>
+      <nav id="nav" class="stroke">
+        <a href="#inicio">
+          <img src="imgs/logo-bruxo.png" class="logo" alt="" />
+        </a>
+        <ul id="menu" class="stroke">
+          <li><a href="#mercado">MERCADO</a></li>
+          <li><a href="#feedback">FEEDBACK</a></li>
+          <li><a href="#sobre">SOBRE</a></li>
+          <li><a href="#ebook">EBOOK</a></li>
+          <li><a href="#contato">CONTATO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--INICIO/HOME-->
     <div class="img-fundo">
-      <header>
-        
-          
-           
-          
-            <nav id="nav" class="stroke">  
-              <a href="#inicio">
-                <img src="imgs/logo-bruxo.png" class="logo" alt="" />
-              </a>
-          <ul id="menu" class="stroke">
-            <li><a href="#mercado">MERCADO</a></li>
-            <li><a href="#feedback">FEEDBACK</a></li>
-            <li><a href="#sobre">SOBRE</a></li>
-            <li><a href="#ebook">EBOOK</a></li>
-            <li><a href="#contato">CONTATO</a></li>
-            
-          </ul>
-        </nav>
-      </header>
-      
-        
       <section id="inicio">
-        
-        
         <div class="container">
-          
           <h1>BRUXO <br />081</h1>
           <img
             src="imgs/background-dragon.png"
@@ -51,17 +55,15 @@
             data-aos="fade-up"
             data-aos-duration="3000"
           />
-          
         </div>
         <div class="container-scroll">
           <div class="chevron"></div>
           <div class="chevron"></div>
           <div class="chevron"></div>
-          
         </div>
       </section>
     </div>
-
+    <!--MERCADO-->
     <section class="mercado" id="mercado">
       <h1 class="title" data-aos="fade-up" data-aos-duration="1500">MERCADO</h1>
       <div class="container-card" data-aos="zoom-in" data-aos-duration="2000">
@@ -129,25 +131,34 @@
         </div>
       </div>
     </section>
+    <!--FEEDBACK-->
     <section
       class="feedback"
       id="feedback"
       data-aos="fade-up"
       data-aos-duration="1500"
     >
-      <h1 class="title">FEEDBACK</h1>
-      <section class="galery" data-aos="zoom-in" data-aos-duration="2000">
-        <div class="fotos">
-          <img src="imgs/feedback/pag1.png" alt="Foto 1" />
-          <img src="imgs/feedback/pag2.png" alt="Foto 2" />
-          <img src="imgs/feedback/pag3.png" alt="Foto 3" />
-          <img src="imgs/feedback/pag4.png" alt="Foto 4" />
-          <img src="imgs/feedback/pag5.png" alt="Foto 5" />
-          <img src="imgs/feedback/pag6.png" alt="Foto 6" />
-          <img src="imgs/feedback/pag7.png" alt="Foto 7" />
+      <h1 class="title-feedback">FEEDBACK</h1>
+
+      <div class="slide-container">
+        <div class="slide">
+          <img src="imgs/feedback/pag1.png" alt="feedback" class="slide-img" />
         </div>
-      </section>
+        <div class="slide">
+          <img src="imgs/feedback/pag2.png" alt="feedback" class="slide-img" />
+        </div>
+        <div class="slide">
+          <img src="imgs/feedback/pag3.png" alt="feedback" class="slide-img" />
+        </div>
+        <div class="slide">
+          <img src="imgs/feedback/pag4.png" alt="feedback" class="slide-img" />
+        </div>
+
+        <button id="btn-back"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="btn-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
     </section>
+    <!--SOBRE-->
     <section class="sobre" id="sobre">
       <h1 class="title" data-aos="fade-up" data-aos-duration="1500">SOBRE</h1>
       <section class="container-sobre">
@@ -187,47 +198,62 @@
         </div>
       </section>
     </section>
+    <!--EBOOK-->
     <section class="ebook" id="ebook">
       <div data-aos="fade-up" data-aos-duration="1500">
         <h1 class="ebook-title">EBOOK DO BRUXO</h1>
       </div>
       <div class="container-ebook">
-        <p>o e-book dos crias contém 10 tópicos exclusivos para ser lucrativo no mercado esportivo de forma simples e direta, explico como ser lucrativo com banca de até R$200,00, pois sei que há uma grande dificuldade de gestão de banca com pouco capital e foi por isso que fiz esse e-book completo!
-        <br>
+        <p>
+          o e-book dos crias contém 10 tópicos exclusivos para ser lucrativo no
+          mercado esportivo de forma simples e direta, explico como ser
+          lucrativo com banca de até R$200,00, pois sei que há uma grande
+          dificuldade de gestão de banca com pouco capital e foi por isso que
+          fiz esse e-book completo!
+          <br />
           os seguintes conteúdos que são abordados no e-book
-          <br>
+          <br />
           1-boas vindas
-          <br>
-          2-como o mercado esportivo pode influenciar na sua vida pessoal
-          br
+          <br />
+          2-como o mercado esportivo pode influenciar na sua vida pessoal br
           3-como saber a hora certa de não apostar
-          <br>
+          <br />
           4-site, traders e apostadores que recomendo para acompanhar
-          <br>
+          <br />
           5- qual a melhor liga para apostar em gols e escanteios.
-          <br>
+          <br />
           6- ligas que não aconselho apostar
-          <br>
+          <br />
           7-qual as melhores ligas e motivos para apostar em cartões.
-          <br>
-          8- as chaves para abrir as portas que tanto travam os apostadores no mercado.
-          <br>
+          <br />
+          8- as chaves para abrir as portas que tanto travam os apostadores no
+          mercado.
+          <br />
           9- o maior segredo da chave dos crias (banca de até R$200,00)
-          <br>
-          10- O GRANDE FINAL- COMO FAZER de R$10,00 A R$100,00 por dia sem correr o risco de QUEBRAR seu pouco capital.</p>
-          <img src="imgs/ebookBruxo.png" alt="bruxo081"  />
-        </div>
-        <button class="compra">
-          <a href="https://hotmart.com/pt-br/marketplace/produtos/ebook-dos-crias-versao-2-0-bruxo081/H75372180H" target="_blank"> COMPRAR AGORA <i class="fa-solid fa-cart-shopping"></i></a>
-        </button>
-        
-      
-        <button>
-          <a href="https://api.whatsapp.com/send?phone=5581981182229&text=Me%20interessei%20pelo%20e-book%2C%20como%20fa%C3%A7o%20para%20ganhar%20o%20desconto%3F" target="_blank">COMPRE COM DESCONTO <i class="fa-solid fa-tags"></i></a>
-        </button>
-        
+          <br />
+          10- O GRANDE FINAL- COMO FAZER de R$10,00 A R$100,00 por dia sem
+          correr o risco de QUEBRAR seu pouco capital.
+        </p>
+        <img src="imgs/ebookBruxo.png" alt="bruxo081" />
       </div>
+      <button class="compra">
+        <a
+          href="https://hotmart.com/pt-br/marketplace/produtos/ebook-dos-crias-versao-2-0-bruxo081/H75372180H"
+          target="_blank"
+        >
+          COMPRAR AGORA <i class="fa-solid fa-cart-shopping"></i
+        ></a>
+      </button>
+
+      <button>
+        <a
+          href="https://api.whatsapp.com/send?phone=5581981182229&text=Me%20interessei%20pelo%20e-book%2C%20como%20fa%C3%A7o%20para%20ganhar%20o%20desconto%3F"
+          target="_blank"
+          >COMPRE COM DESCONTO <i class="fa-solid fa-tags"></i
+        ></a>
+      </button>
     </section>
+    <!--CONTATO-->
     <section class="contato" id="contato">
       <div class="container-title" data-aos="fade-up" data-aos-duration="1500">
         <h1>CONTATO</h1>
@@ -235,13 +261,23 @@
       </div>
       <div class="container-button" data-aos="zoom-in" data-aos-duration="1500">
         <button class="instagram">
-          <a href="https://www.instagram.com/bruxo081_/?theme=dark" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a
+            href="https://www.instagram.com/bruxo081_/?theme=dark"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i> Instagram</a
+          >
         </button>
         <button class="whatsapp">
-          <a href="https://wa.me/5581981182229?text=Me+interessei+pelo+e-book%2C+como+fa%C3%A7o+para+ganhar+o+desconto%3F" target="_blank"><i class="fa-brands fa-whatsapp" ></i> Whatsapp</a>
+          <a
+            href="https://wa.me/5581981182229?text=Me+interessei+pelo+e-book%2C+como+fa%C3%A7o+para+ganhar+o+desconto%3F"
+            target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i> Whatsapp</a
+          >
         </button>
         <button class="telegram">
-          <a href="https://t.me/futebolpersonalizado081" target="_blank"><i class="fa-brands fa-telegram"></i> GRUPO FREE</a>
+          <a href="https://t.me/futebolpersonalizado081" target="_blank"
+            ><i class="fa-brands fa-telegram"></i> GRUPO FREE</a
+          >
         </button>
       </div>
 
@@ -253,11 +289,5 @@
     <script>
       AOS.init();
     </script>
-    <script
-      src="https://kit.fontawesome.com/34b44f9772.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="scripts/mobile-navbar.js"></script>
   </body>
 </html>
