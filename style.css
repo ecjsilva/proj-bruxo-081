@@ -78,7 +78,7 @@ body {
 
 /*INICIO*/
 .img-fundo {
-  background-image: url(imgs/FundoPrincipal.png);
+  background-image: url(imgs/FundoPrincipal.webp);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -168,7 +168,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url(imgs/fundo4.png);
+  background-image: url(imgs/fundo4.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -217,7 +217,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url(imgs/dinheiro.png);
+  background-image: url(imgs/dinheiro.webp);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -718,15 +718,15 @@ span {
 }
 @media (max-width: 428px) {
   .img-fundo {
-    background-image: url(imgs/midiaquery/home-mobile.png);
+    background-image: url(imgs/midiaquery/home-mobile.webp);
     background-size: cover;
   }
   .mercado {
-    background-image: url(imgs/midiaquery/mercado-mobile.png);
+    background-image: url(imgs/midiaquery/mercado-mobile.webp);
     background-size: cover;
   }
   .feedback {
-    background-image: url(imgs/midiaquery/feedback-mobile.png);
+    background-image: url(imgs/midiaquery/feedback-mobile.webp);
     background-size: cover;
   }
 
