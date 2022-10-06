@@ -81,15 +81,15 @@ body {
   background-image: url(imgs/FundoPrincipal.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
   height: 100vh;
 }
 
 .container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .bruxo {
@@ -101,18 +101,17 @@ body {
 .container h1 {
   color: #b0e25c;
   text-align: center;
-  font-size: 75px;
+  font-size: 6rem;
   position: absolute;
-  margin-top: 14rem;
+  margin-bottom: 21rem;
   font-family: "blank-river.ttf";
   animation: tracking-in-contract-bck-top 3s cubic-bezier(0.215, 0.61, 0.355, 1)
     both;
 }
 
 #dragon {
-  width: 40rem;
-  height: 40rem;
-
+  width: 60rem;
+  height: 60rem;
   animation: rotate 10s linear infinite;
   filter: brightness(70%);
   cursor: none;
@@ -121,7 +120,7 @@ body {
   position: absolute;
   width: 20rem;
   height: 20rem;
-  margin-top: 24rem;
+
   filter: brightness(140%);
 }
 #bruxo:hover {
@@ -177,9 +176,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
-  gap: 5rem;
+  gap: 16rem;
 }
 
 .card {
@@ -356,7 +356,6 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  margin-top: 15rem;
 }
 
 .container-ebook {
@@ -400,6 +399,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   height: 100vh;
 }
 .container-title {
@@ -412,7 +412,7 @@ body {
 
 .container-title h1 {
   color: #b0e25c;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .container-title h2 {
@@ -730,106 +730,23 @@ span {
     background-size: cover;
   }
 
-  #inicio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10rem;
-  }
-  .container-scroll {
-    display: flex;
-
-    width: 24px;
-    height: 24px;
+  .container {
+    justify-content: flex-end;
   }
 
-  .chevron {
-    position: absolute;
-    width: 28px;
-    height: 8px;
-    opacity: 0;
-    transform: scale3d(0.5, 0.5, 0.5);
-    animation: move 3s ease-out infinite;
-  }
-
-  .chevron:first-child {
-    animation: move 3s ease-out 1s infinite;
-  }
-
-  .chevron:nth-child(2) {
-    animation: move 3s ease-out 2s infinite;
-  }
-
-  .chevron:before,
-  .chevron:after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 51%;
-    background: #fff;
-  }
-
-  .chevron:before {
-    left: 0;
-    transform: skew(0deg, 30deg);
-  }
-
-  .chevron:after {
-    right: 0;
-    width: 50%;
-    transform: skew(0deg, -30deg);
-  }
-
-  @keyframes move {
-    25% {
-      opacity: 1;
-    }
-    33% {
-      opacity: 1;
-      transform: translateY(30px);
-    }
-    67% {
-      opacity: 1;
-      transform: translateY(40px);
-    }
-    100% {
-      opacity: 0;
-      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-    }
-  }
-
-  .text {
-    display: block;
-    margin-top: 75px;
-    margin-left: -30px;
-    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    font-size: 12px;
-    color: #fff;
-    text-transform: uppercase;
-    white-space: nowrap;
-    opacity: 0.25;
-    animation: pulse 2s linear alternate infinite;
-  }
-
-  @keyframes pulse {
-    to {
-      opacity: 1;
-    }
-  }
   #dragon {
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 35rem;
+    margin: 8rem;
   }
   #bruxo {
     width: 15rem;
     height: 15rem;
-    margin-top: 22rem;
+    margin: 0;
   }
   .container h1 {
     font-size: 4rem;
-    margin-top: 13rem;
+    margin-bottom: 20rem;
   }
   .container-card {
     gap: 0.5rem;
@@ -929,30 +846,29 @@ span {
 
 @media (max-width: 414px) {
   #dragon {
-    width: 25rem;
-    height: 25rem;
-    margin-top: 5rem;
+    width: 30rem;
+    height: 30rem;
+    margin-bottom: 11rem;
   }
   #bruxo {
-    width: 17rem;
-    height: 17rem;
-    margin-top: 22rem;
+    width: 15rem;
+    height: 15rem;
   }
   .container h1 {
     font-size: 4rem;
     margin-top: 13rem;
   }
   .container-card {
-    height: 140vh;
+    height: 100vh;
   }
   .card {
-    width: 40%;
+    width: 30%;
   }
   .title-card {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .description-card {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -968,18 +884,16 @@ span {
 
 @media (max-width: 375px) {
   #dragon {
-    width: 20rem;
-    height: 20rem;
-    margin-top: 5rem;
+    width: 30rem;
+    height: 30rem;
   }
   #bruxo {
     width: 14rem;
     height: 14rem;
-    margin-top: 19rem;
   }
   .container h1 {
-    font-size: 3rem;
-    margin-top: 11rem;
+    font-size: 4rem;
+    margin-bottom: 20rem;
   }
   .title {
     font-size: 3rem;
@@ -989,12 +903,15 @@ span {
     width: 340px;
   }
   .container-title h1 {
-    margin-top: 45rem;
+    margin-top: 10rem;
   }
   .container-button button {
-    width: 10rem;
+    width: 11rem;
     height: 4rem;
     font-size: 1.5rem;
+  }
+  .title-card {
+    font-size: 0.55rem;
   }
 }
 
@@ -1017,18 +934,21 @@ span {
   #dragon {
     width: 25rem;
     height: 25rem;
+    margin-bottom: 4rem;
   }
   .container h1 {
     font-size: 3rem;
-    margin-top: 13rem;
+    margin-bottom: 12rem;
   }
   #bruxo {
     width: 10rem;
     height: 10rem;
-    margin-top: 20rem;
   }
   .container-scroll {
     display: none;
+  }
+  #mercado h1 {
+    margin: 1rem;
   }
   .title {
     font-size: 2rem;
@@ -1037,13 +957,16 @@ span {
     width: 100%;
   }
   .card {
-    width: 30%;
+    width: 25%;
   }
   .title-card {
+    height: 3rem;
+    text-align: center;
     font-size: 0.5rem;
   }
   .description-card {
-    font-size: 0.55rem;
+    font-size: 0.45rem;
+    height: 10rem;
   }
   .slide-img {
     height: 100%;
