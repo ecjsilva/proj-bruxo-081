@@ -396,6 +396,16 @@ body {
 }
 
 /*CONTATO*/
+
+h3 {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
 .contato {
   display: flex;
   flex-direction: column;
